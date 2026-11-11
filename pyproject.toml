@@ -1,0 +1,19 @@
+[project]
+name = "case-sicor"
+version = "0.1.0"
+description = "Análise da carteira de crédito rural (SICOR/BCB) com foco no Sicoob: ingestão, base analítica e indicadores de risco."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Pedro Boaventura" }]
+dependencies = [
+    "duckdb>=1.5",
+    "polars>=1.39",
+    "pyarrow>=15",
+    "pandas>=2.2",
+    "openpyxl>=3.1",
+    "plotly>=5.20",
+    "kaleido>=0.2",
+]
+
+[project.optional-dependencies]
+dev = ["jupyterlab>=4.0"]

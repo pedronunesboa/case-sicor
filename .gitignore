@@ -1,0 +1,32 @@
+# --- Ambiente Python ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- IDE / SO ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Dados (volumosos — ver seção "Dados" do README) ---
+# Microdados brutos do BCB (~1,2 GB)
+data/raw/*.gz
+# Artefatos intermediários e base analítica (regeneráveis pelo notebook 1.0)
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*.parquet
+*.duckdb
+*.duckdb.wal
+
+# --- Modelos treinados ---
+models/*
+!models/.gitkeep
+
+# --- Documentos não versionados ---
+reports/*.pdf
